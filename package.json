@@ -36,7 +36,8 @@
     "eslint-plugin-react": "^7.21.3",
     "prettier": "^2.0.5",
     "serve": "^11.3.2",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "eslint-plugin-react": "^7.21.2"
   },
   "license": "MIT",
   "sideEffects": false
