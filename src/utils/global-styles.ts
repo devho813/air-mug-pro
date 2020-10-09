@@ -15,6 +15,8 @@ export const hideScrollBar = css`
   }
 `;
 
+export const stickyEffect = css``;
+
 const GlobalStyles = createGlobalStyle`
   ${reset}
   * {
