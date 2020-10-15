@@ -1,7 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 function Section1() {
   return (
-    <section>
+    <Section1Container>
       <p>
         <strong>보통 스크롤 영역</strong>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem suscipit voluptatum veritatis itaque iure
@@ -20,7 +21,25 @@ function Section1() {
         possimus magnam ratione odio corrupti excepturi a sint sapiente odit ad temporibus voluptatibus unde? Ullam, hic
         ratione!
       </p>
-    </section>
+    </Section1Container>
   );
 }
 export default Section1;
+
+const Section1Container = styled.section`
+  padding-top: 50vh;
+
+  p {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #888;
+
+    strong {
+      float: left;
+      margin-right: 0.2em;
+      font-size: 3rem;
+      color: rgb(29, 29, 31);
+      font-weight: bold;
+    }
+  }
+`;

@@ -15,6 +15,7 @@ function Gnb() {
 }
 
 const GnbContainer = styled.nav`
+  padding: 0 1rem;
   height: 44px;
 `;
 

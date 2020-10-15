@@ -17,6 +17,7 @@ function Lnb() {
 }
 
 const LnbContainer = styled.nav`
+  padding: 0 1rem;
   height: 52px;
   border-bottom: 1px solid #ddd;
 `;

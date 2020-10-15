@@ -30,6 +30,8 @@ function Section2() {
 }
 export default Section2;
 
-const Section2Container = styled.section``;
+const Section2Container = styled.section`
+  padding-top: 50vh;
+`;
 const Content = styled.div``;
 const Pin = styled.div``;
