@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../utils/media-query';
 function Section0() {
   return (
     <Section0Container>
@@ -37,6 +38,10 @@ const Section0Container = styled.section`
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
+
+    ${media.tablet`
+      font-size: 9vw;
+    `}
   }
 `;
 
@@ -47,6 +52,10 @@ const DescriptionWrapper = styled.div`
   margin: 5px 0;
   height: 3em;
   font-size: 2.5rem;
+
+  ${media.tablet`
+    font-size: 4vw;
+  `}
 
   p {
     line-height: 1.2;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../utils/media-query';
 function Section1() {
   return (
     <Section1Container>
@@ -30,9 +31,15 @@ const Section1Container = styled.section`
   padding-top: 50vh;
 
   p {
+    margin: 0 auto;
     padding: 0 1rem;
+    max-width: 1000px;
     font-size: 1.2rem;
     color: #888;
+
+    ${media.tablet`
+      font-size: 2rem;
+    `}
 
     strong {
       float: left;
@@ -40,6 +47,10 @@ const Section1Container = styled.section`
       font-size: 3rem;
       color: rgb(29, 29, 31);
       font-weight: bold;
+
+      ${media.tablet`
+        font-size: 6rem;
+    `}
     }
   }
 `;

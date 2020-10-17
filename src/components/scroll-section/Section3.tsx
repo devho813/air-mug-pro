@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../utils/media-query';
 function Section3() {
   return (
     <Section3Container>
@@ -28,9 +29,15 @@ const Section3Container = styled.section`
 `;
 
 const MainDescription = styled.p`
+  margin: 0 auto;
   padding: 0 1rem;
+  max-width: 1000px;
   font-size: 2rem;
   color: #888;
+
+  ${media.tablet`
+    font-size: 4vw;
+  `}
 
   strong {
     color: rgb(29, 29, 31);
@@ -39,7 +46,14 @@ const MainDescription = styled.p`
 `;
 
 const CanvasCaption = styled.p`
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1000px;
   padding: 0 1rem;
   font-size: 1.2rem;
   color: #888;
+
+  ${media.tablet`
+    font-size: 2rem;
+  `}
 `;

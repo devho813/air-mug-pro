@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../utils/media-query';
 function Section2() {
   return (
     <Section2Container>
@@ -47,10 +48,18 @@ const MainDescription = styled.div`
     text-align: center;
     font-weight: bold;
 
+    ${media.tablet`
+      font-size: 6vw;
+    `}
+
     small {
       display: block;
       margin-bottom: 0.5em;
       font-size: 1.2rem;
+
+      ${media.tablet`
+        font-size: 1.5vw;
+      `}
     }
   }
 `;
@@ -58,6 +67,10 @@ const MainDescription = styled.div`
 const SubDescription = styled.div`
   width: 50%;
   font-weight: bold;
+
+  ${media.tablet`
+    width: 20%;
+  `}
 `;
 
 const Pin = styled.div`
