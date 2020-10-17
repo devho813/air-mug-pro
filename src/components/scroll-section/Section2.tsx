@@ -56,8 +56,12 @@ const MainDescription = styled.div`
 `;
 
 const SubDescription = styled.div`
-  p {
-  }
+  width: 50%;
+  font-weight: bold;
 `;
 
-const Pin = styled.div``;
+const Pin = styled.div`
+  width: 1px;
+  height: 100px;
+  background-color: rgb(29, 29, 31);
+`;

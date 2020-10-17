@@ -3,12 +3,12 @@ import styled from 'styled-components';
 function Section3() {
   return (
     <Section3Container>
-      <p>
+      <MainDescription>
         <strong>Retina 머그</strong>
         <br />
         아이디어를 광활하게 펼칠
         <br /> 아름답고 부드러운 음료 공간.
-      </p>
+      </MainDescription>
       <CanvasCaption>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet at fuga quae perspiciatis veniam impedit et,
         ratione est optio porro. Incidunt aperiam nemo voluptas odit quisquam harum in mollitia. Incidunt minima iusto
@@ -26,4 +26,20 @@ export default Section3;
 const Section3Container = styled.section`
   padding-top: 50vh;
 `;
-const CanvasCaption = styled.p``;
+
+const MainDescription = styled.p`
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #888;
+
+  strong {
+    color: rgb(29, 29, 31);
+    font-weight: bold;
+  }
+`;
+
+const CanvasCaption = styled.p`
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #888;
+`;
