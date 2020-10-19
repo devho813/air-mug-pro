@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 import media from '../../utils/media-query';
+
 function Section3() {
   return (
     <Section3Container>
@@ -22,7 +23,7 @@ function Section3() {
     </Section3Container>
   );
 }
-export default Section3;
+export default memo(Section3);
 
 const Section3Container = styled.section`
   padding-top: 50vh;

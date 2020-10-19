@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 import media from '../../utils/media-query';
 function Section1() {
@@ -25,7 +25,7 @@ function Section1() {
     </Section1Container>
   );
 }
-export default Section1;
+export default memo(Section1);
 
 const Section1Container = styled.section`
   padding-top: 50vh;
