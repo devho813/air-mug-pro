@@ -32,6 +32,7 @@ function Section2({ showScene }: Props) {
     </Section2Container>
   );
 }
+
 export default memo(Section2);
 
 const Section2Container = styled.section`

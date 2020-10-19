@@ -23,6 +23,7 @@ function Section3() {
     </Section3Container>
   );
 }
+
 export default memo(Section3);
 
 const Section3Container = styled.section`

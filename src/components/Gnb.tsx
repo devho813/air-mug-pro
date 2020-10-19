@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 function Gnb() {
@@ -13,6 +13,8 @@ function Gnb() {
     </GnbContainer>
   );
 }
+
+export default memo(Gnb);
 
 const GnbContainer = styled.nav`
   padding: 0 1rem;
@@ -31,5 +33,3 @@ const GnbLinkWrapper = styled.div`
 const GnbLink = styled.a`
   color: rgb(29, 29, 31);
 `;
-
-export default Gnb;

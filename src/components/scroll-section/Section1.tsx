@@ -25,6 +25,7 @@ function Section1() {
     </Section1Container>
   );
 }
+
 export default memo(Section1);
 
 const Section1Container = styled.section`

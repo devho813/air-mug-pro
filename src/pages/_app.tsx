@@ -3,6 +3,7 @@ import { NextComponentType } from 'next';
 import { AppContext, AppInitialProps, AppProps } from 'next/app';
 import GlobalStyles from '../utils/global-styles';
 import Head from 'next/head';
+import { RecoilRoot } from 'recoil';
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({ Component, pageProps }: any) => {
   return (
@@ -15,7 +16,9 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({ Compo
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
     </>
   );
 };

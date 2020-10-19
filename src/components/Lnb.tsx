@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 function Lnb() {
@@ -15,6 +15,8 @@ function Lnb() {
     </LnbContainer>
   );
 }
+
+export default memo(Lnb);
 
 const LnbContainer = styled.nav`
   padding: 0 1rem;
@@ -42,5 +44,3 @@ const LnbLink = styled.a`
     font-size: 0.8rem;
   }
 `;
-
-export default Lnb;
